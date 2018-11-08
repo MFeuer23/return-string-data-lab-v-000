@@ -10,6 +10,7 @@ class ProductsController < ApplicationController
   
   def create
     Product.create(product_params)
+<<<<<<< HEAD
     redirect_to products_path
   end
   
@@ -26,6 +27,11 @@ class ProductsController < ApplicationController
   
   
   
+=======
+    redirect_to @product
+  end
+  
+>>>>>>> a4edb8727f4eda63e0fd50c6476da1f75793e72a
   private
     def product_params
       params.require(:product).permit(:name, :price)
